@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Samples | Kimberly Smalls</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Kimberly Smalls</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="writing-samples.html">Writing Samples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Technical Writing Samples</h1>
+            <p>A collection of documentation, guides, and technical content</p>
+        </section>
+
+        <section class="categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="api">API Documentation</button>
+            <button class="category-btn" data-category="tutorial">Tutorials</button>
+            <button class="category-btn" data-category="guide">User Guides</button>
+            <button class="category-btn" data-category="reference">Reference Docs</button>
+        </section>
+
+        <section class="samples-grid">
+            <article class="sample-card" data-category="api">
+                <span class="category">API Documentation</span>
+                <h2>REST API Reference</h2>
+                <p>Comprehensive REST API documentation including authentication, endpoints, request/response examples, and error handling.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+
+            <article class="sample-card" data-category="tutorial">
+                <span class="category">Tutorial</span>
+                <h2>Getting Started Guide</h2>
+                <p>Step-by-step tutorial for new users covering installation, configuration, and first-time setup of a developer tool.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+
+            <article class="sample-card" data-category="guide">
+                <span class="category">User Guide</span>
+                <h2>Administrator Handbook</h2>
+                <p>Detailed user guide for system administrators covering deployment, maintenance, troubleshooting, and best practices.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+
+            <article class="sample-card" data-category="reference">
+                <span class="category">Reference Docs</span>
+                <h2>SDK Reference Manual</h2>
+                <p>Technical reference documentation for a software development kit including classes, methods, properties, and code examples.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+
+            <article class="sample-card" data-category="tutorial">
+                <span class="category">Tutorial</span>
+                <h2>Integration Walkthrough</h2>
+                <p>End-to-end tutorial demonstrating how to integrate a third-party service with detailed code samples and explanations.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+
+            <article class="sample-card" data-category="api">
+                <span class="category">API Documentation</span>
+                <h2>GraphQL Schema Docs</h2>
+                <p>GraphQL API documentation with schema definitions, query examples, mutations, and subscription handling.</p>
+                <a href="#" class="btn">View Sample</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kimberly Smalls. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Category filtering
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+                const cards = document.querySelectorAll('.sample-card');
+
+                cards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
