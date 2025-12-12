@@ -107,12 +107,13 @@ main {
 
 .download-btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 8px 16px;
     background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 0.875rem;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
