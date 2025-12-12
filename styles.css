@@ -105,6 +105,27 @@ main {
     background-color: var(--primary-dark);
 }
 
+.download-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.download-btn:active {
+    background-color: #004085;
+}
+
 /* Page Header */
 .page-header {
     text-align: center;
