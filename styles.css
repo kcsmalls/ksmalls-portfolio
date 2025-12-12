@@ -220,6 +220,16 @@ main {
     border-color: var(--primary-color);
 }
 
+/* Resume Actions */
+.resume-actions {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.pdf-viewer {
+    margin-top: 2rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
