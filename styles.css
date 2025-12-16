@@ -230,6 +230,21 @@ main {
     margin-top: 2rem;
 }
 
+/* About Section */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
 /* Footer */
 footer {
     text-align: center;
