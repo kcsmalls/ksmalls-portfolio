@@ -235,15 +235,19 @@ main {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
-
 
 /* Footer */
 footer {
