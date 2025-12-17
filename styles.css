@@ -255,8 +255,8 @@ main {
 
 /* Email Icon */
 .email-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
     vertical-align: middle;
     display: inline-block;
@@ -264,8 +264,8 @@ main {
 
 /* LinkedIn Icon */
 .linkedin-icon {
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
     vertical-align: middle;
     display: inline-block;
