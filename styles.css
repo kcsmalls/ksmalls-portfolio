@@ -253,71 +253,35 @@ main {
     margin: 0 auto;
 }
 
-/* Email Icon */
-.email-icon {
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-/* LinkedIn Icon */
-.linkedin-icon {
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-/* Social Widgets */
+/* Social Icons */
 .social-widgets {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
 
-.email-widget,
-.linkedin-widget {
-    margin: 0;
-}
-
-.email-button,
-.linkedin-button {
+.social-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
+    background-color: #eef2f7;
+    transition: background-color 0.2s ease;
     text-decoration: none;
 }
 
-.email-button {
-    background-color: #007bff;
+.social-link:hover {
+    background-color: #dbe3f0;
 }
 
-.email-button:hover {
-    background-color: #0056b3;
-}
-
-.linkedin-button {
-    background-color: #0077b5;
-}
-
-.linkedin-button:hover {
-    background-color: #005885;
-}
-
-.email-icon,
-.linkedin-icon {
-    width: 12px;
-    height: 12px;
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
 
 /* Footer */
