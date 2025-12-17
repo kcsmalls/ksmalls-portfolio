@@ -85,7 +85,7 @@ main {
 
 .hero p {
     font-size: 1.25rem;
-    color: var(--text-light);
+    color: var(--text-color);
     margin-bottom: 2rem;
 }
 
