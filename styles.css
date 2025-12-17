@@ -240,13 +240,17 @@ main {
   padding: 20px;
 }
 
+.profile-column {
+    flex-shrink: 0;
+    text-align: center;
+}
+
 .profile-img {
-  float: left;
-  width: 250px;
-  height: auto;
-  margin-right: 30px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Email Icon */
@@ -271,7 +275,7 @@ main {
 .social-widgets {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -314,7 +318,6 @@ main {
 .linkedin-icon {
     width: 24px;
     height: 24px;
-    margin: 0;
 }
 
 /* Footer */
